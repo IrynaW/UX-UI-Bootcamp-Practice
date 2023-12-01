@@ -12,7 +12,8 @@ h1 {
     text-align: center;
 }
 
-img {
+img,
+picture {
     max-width: 100%;
 }
 
@@ -62,6 +63,16 @@ section {
     padding: 1rem;
 }
 
+.intro {
+    margin-top: 2rem;
+}
+
+.intro picture,
+.intro img {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* these are the red buttons at the bottom. We can restyle them just like a navbar. We used inline-block, but you could use Flexbox instead if you prefer */
 
@@ -145,4 +156,22 @@ footer a {
         /* turn off mobile settings */
         margin: 0;
     }
+}
+
+.bkgdimg {
+    background: url(../media/images/jakes-meals.jpg) repeat-x;
+    height: 250px;
+}
+.intro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.intro-text {
+    flex-basis: 40%;
+}
+.intro img,
+.intro picture {
+    display: inline;
+    margin: 0;
 }
